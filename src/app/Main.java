@@ -15,9 +15,12 @@ public class Main {
 
         Function<String, Integer> upperCaseCount = StringListProcessor::countUppercase;
 
+        int randomNumber = RandomNumberGenerator.generateRandomNumber(1, 100);
+
         System.out.println("MathOperation: " + math.operate(2,3));
         System.out.println("toUpperCase: " + stringManipulator.toUpperCase("string"));
         System.out.println("countUppercase: " + upperCaseCount.apply("StR"));
+        System.out.println("generateRandomNumber: " + randomNumber);
 
     }
 }
